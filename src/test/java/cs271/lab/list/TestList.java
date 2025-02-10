@@ -1,15 +1,13 @@
 package cs271.lab.list;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
-import static org.junit.Assert.fail;
-
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+
+import static org.junit.Assert.*;
 
 public class TestList {
 
@@ -39,11 +37,10 @@ public class TestList {
 
   @Test
   public void testSizeNonEmpty() {
-    // TODO fix the expected values in the assertions below
     list.add(77);
-    assertEquals(true, list.isEmpty());
-    assertEquals(0, list.size());
-    assertEquals(0, list.get(0).intValue());
+    assertFalse(list.isEmpty());
+    assertEquals(1, list.size());
+    assertEquals(77, list.get(0).intValue());
   }
 
   @Test
@@ -59,11 +56,10 @@ public class TestList {
     list.add(77);
     list.add(77);
     list.add(77);
-    // TODO fix the expected values in the assertions below
-    assertEquals(0, list.size());
+    assertEquals(3, list.size());
     assertEquals(0, list.indexOf(77));
-    assertEquals(0, list.get(1).intValue());
-    assertEquals(0, list.lastIndexOf(77));
+    assertEquals(77, list.get(1).intValue());
+    assertEquals(2, list.lastIndexOf(77));
   }
 
   @Test
@@ -75,13 +71,12 @@ public class TestList {
     list.add(55);
     list.add(77);
     list.add(66);
-    // TODO fix the expected values in the assertions below
-    assertEquals(0, list.size());
-    assertEquals(0, list.indexOf(77));
-    assertEquals(0, list.lastIndexOf(77));
-    assertEquals(0, list.get(2).intValue());
-    assertEquals(0, list.get(3).intValue());
-    assertEquals(List.of(33, 77, 44), list);
+    assertEquals(7, list.size());
+    assertEquals(1, list.indexOf(77));
+    assertEquals(5, list.lastIndexOf(77));
+    assertEquals(44, list.get(2).intValue());
+    assertEquals(77, list.get(3).intValue());
+    assertEquals(List.of(33, 77, 44, 77, 55, 77, 66), list);
   }
 
   @Test
