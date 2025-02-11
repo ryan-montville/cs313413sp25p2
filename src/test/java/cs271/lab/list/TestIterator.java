@@ -71,10 +71,12 @@ public class TestIterator {
     list.add(55);
     list.add(77);
     list.add(66);
+
     final var i = list.iterator();
     while (i.hasNext()) {
+
       if (i.next() == 77) {
-        i.remove(); // TODO Question: What happens if you use list.remove(Integer.valueOf(77))?
+        i.remove();
       }
     }
     assertEquals(list, List.of(33, 44, 55, 66));
@@ -92,7 +94,6 @@ public class TestIterator {
     double sum = 0;
     int n = 0;
 
-    // TODO use an iterator and a while loop to compute the average (mean) of the values
     final var i = list.iterator();
     while (i.hasNext()) {
       sum += i.next();
