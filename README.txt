@@ -2,7 +2,7 @@ COMP 313/413 Project 2 Report Template
 
 TestList.java and TestIterator.java
 
-	TODO also try with a LinkedList - does it make any difference?
+	Also try with a LinkedList - does it make any difference?
 
 		As far as the tests go, changing it to a LnkedList makes no diffreence, all the tests/asserts pass
 
