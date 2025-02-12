@@ -37,28 +37,28 @@ TestPerformance.java
 	then call a method I created called calcTime that subtracts the startTime from the endTime and prints it out.
 
 	SIZE 10
-								 #1    #2    #3    #4    #5    #6
+                                 #1    #2    #3    #4    #5    #6
         testArrayListAddRemove:  184   184   182   184   184   181
         testLinkedListAddRemove: 27    23    23    22    24    22
 		testArrayListAccess:     8     10    8     8     8     10
         testLinkedListAccess:    10    11    9     11    10    10
 
 	SIZE 100
-								 #1    #2    #3    #4    #5    #6
+                                 #1    #2    #3    #4    #5    #6
         testArrayListAddRemove:  191   194   192   196   202   189
         testLinkedListAddRemove: 23    25    23    22    23    23
 		testArrayListAccess:     9     8     9     9     9     10
         testLinkedListAccess:    20    23    21    26    22    21
 
 	SIZE 1000
-								 #1    #2    #3    #4    #5    #6
+                                 #1    #2    #3    #4    #5    #6
         testArrayListAddRemove:  293   291   312   313   312   296
         testLinkedListAddRemove: 23    39    23    44    25    25
 		testArrayListAccess:     9     10    9     8     10    9
         testLinkedListAccess:    244   237   240   256   255   241
 
 	SIZE 10000
-								 #1    #2    #3    #4    #5    #6
+                                 #1    #2    #3    #4    #5    #6
         testArrayListAddRemove:  1511  1541  1507  1519  1525  1226
         testLinkedListAddRemove: 30    24    25    32    24    25
 		testArrayListAccess:     10    8     9     9     8     9
