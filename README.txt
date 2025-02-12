@@ -32,16 +32,20 @@ TestPerformance.java
 	to get the running time in milliseconds and how the test running times were recorded.
 	These are examples of SIZEs you might choose, you can choose others if you wish.
 
+	*****For all the tests I ran, I created 2 long veriables: startTime and endTime. In each 
+	test, I set the variables at the start and end of the test method to System.currentTimeMillis(), 
+	then call a method I created called calcTime that subtracts the startTime from the endTime and prints it out.
+
 	SIZE 10
-								  #1   #2   #3   #4   #5   #6 	... (as many tests as you ran)
-        testArrayListAddRemove:  val1 val2 val3 val4 val5 val6  ... (fill these in in ms)
-        testLinkedListAddRemove: val1 val2 val3 val4 val5 val6
-		testArrayListAccess:     val1 val2 val3 val4 val5 val6
-        testLinkedListAccess:    val1 val2 val3 val4 val5 val6
+								 #1 	#2		#3		#4		#5		#6 	... (as many tests as you ran)
+        testArrayListAddRemove:  184	184		182		184		184		181
+        testLinkedListAddRemove: 27		23 		23		22 		24		22
+		testArrayListAccess:     8		10		8		8		8		10
+        testLinkedListAccess:    10		11		9		11		10		10
 
 	SIZE 100
-								  #1   #2   #3   #4   #5   #6 	... (as many tests as you ran)
-        testArrayListAddRemove:  val1 val2 val3 val4 val5 val6  ... (fill these in in ms)
+								#1		#2		#3		#4		#5		#6 	... (as many tests as you ran)
+        testArrayListAddRemove:  
         testLinkedListAddRemove: val1 val2 val3 val4 val5 val6
 		testArrayListAccess:     val1 val2 val3 val4 val5 val6
         testLinkedListAccess:    val1 val2 val3 val4 val5 val6
